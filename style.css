@@ -361,3 +361,25 @@ footer p {
     font-size: clamp(2.7rem, 10vw, 4.2rem);
   }
 }
+
+
+/* Final typography refinement */
+
+.welcome-text h2{
+    font-size:clamp(2.7rem,4.5vw,4.4rem);
+}
+
+.about-lead{
+    margin-bottom:0.35rem;
+    font-size:1.55rem;
+    color:#2f4732;
+}
+
+.about-mission{
+    margin-top:0;
+    margin-bottom:2.5rem;
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-size:clamp(1.45rem,2vw,1.9rem);
+    line-height:1.45;
+    color:#3a4b39;
+}
