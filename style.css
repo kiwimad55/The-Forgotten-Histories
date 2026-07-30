@@ -510,3 +510,39 @@ footer p {
         max-height:none;
     }
 }
+
+
+/* FINAL BALANCE
+   Reduce portrait by ~20% so the page breathes and the
+   closing paragraph fits comfortably on a desktop screen.
+*/
+
+.author-photo{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.author-photo img{
+    width:80%;
+    max-width:640px;
+    max-height:430px;
+    height:auto;
+    object-fit:cover;
+}
+
+.welcome{
+    row-gap:24px;
+}
+
+.about-closing{
+    margin-top:-4px;
+    padding-top:0;
+}
+
+@media (max-width:1040px){
+    .author-photo img{
+        width:100%;
+        max-height:none;
+    }
+}
