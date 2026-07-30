@@ -454,3 +454,59 @@ footer p {
     max-height: none;
   }
 }
+
+
+/* Fit the whole About section onto a typical desktop screen */
+.welcome{
+    padding-top:70px;
+    padding-bottom:55px;
+    row-gap:34px;
+    column-gap:54px;
+}
+
+.welcome-text h2{
+    font-size:clamp(2.5rem,4vw,3.9rem);
+    margin-bottom:20px;
+    line-height:1.03;
+}
+
+.about-lead{
+    margin-bottom:0.2rem;
+    font-size:1.35rem;
+}
+
+.about-mission{
+    margin-bottom:1.7rem;
+    max-width:420px;
+    line-height:1.5;
+}
+
+.about-history{
+    margin-bottom:0;
+    max-width:430px;
+    line-height:1.45;
+}
+
+.author-photo{
+    align-self:start;
+}
+
+.author-photo img{
+    max-height:520px;
+}
+
+.about-closing{
+    margin-top:-8px;
+    font-size:1.15rem;
+    line-height:1.45;
+}
+
+@media (max-width:1040px){
+    .welcome{
+        padding-top:70px;
+        padding-bottom:70px;
+    }
+    .author-photo img{
+        max-height:none;
+    }
+}
