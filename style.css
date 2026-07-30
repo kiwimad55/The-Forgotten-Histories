@@ -281,3 +281,49 @@ footer p {
     padding-bottom: 70px;
   }
 }
+
+
+/* Wording and author-section refinement */
+.hero-tagline {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: .015em;
+}
+
+.authorline {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: .035em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .55);
+}
+
+.welcome {
+  min-height: 100vh;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.welcome-text {
+  max-width: 690px;
+}
+
+.welcome .about-lead {
+  margin-top: 0;
+  margin-bottom: 28px;
+  color: #324333;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  line-height: 1.35;
+}
+
+.welcome-text h2 {
+  margin-bottom: 22px;
+}
+
+@media (max-width: 900px) {
+  .welcome {
+    min-height: auto;
+  }
+}
