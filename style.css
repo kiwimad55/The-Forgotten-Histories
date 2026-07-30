@@ -327,3 +327,37 @@ footer p {
     min-height: auto;
   }
 }
+
+
+/* Final author-section spacing and scale */
+.welcome-text h2 {
+  font-size: clamp(3rem, 5.2vw, 5.2rem);
+  line-height: 1.02;
+  margin-bottom: 34px;
+}
+
+.welcome .about-lead {
+  margin-bottom: 40px;
+}
+
+.welcome-text > p:not(.eyebrow):not(.about-lead) {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.welcome-text > p:last-child {
+  margin-bottom: 0;
+}
+
+.author-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .welcome-text h2 {
+    font-size: clamp(2.7rem, 10vw, 4.2rem);
+  }
+}
