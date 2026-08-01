@@ -151,7 +151,7 @@ h2 {
 }
 
 .book-grid {
-  width: min(1220px, 100%);
+  width: min(1080px, 100%);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -164,18 +164,23 @@ h2 {
   background: #fffdf8;
   box-shadow: 0 12px 32px rgba(32, 29, 23, .14);
   text-align: left;
-}
+  display: flex;
+  flex-direction: column;
+ }
 
 .book-card img {
   width: 100%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 4 / 5;
   display: block;
-  object-fit: cover;
-  background: #d6d0c5;
+  object-fit: contain;
+  background: #f6f1e7;
 }
 
 .book-copy {
   padding: 26px 26px 30px;
+  display: flex;
+  flex-direction: column;
+  flex:1;
 }
 
 .book-number {
@@ -545,4 +550,44 @@ footer p {
         width:100%;
         max-height:none;
     }
+}
+.book-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 22px;
+    background: #8b1e1e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.book-button:hover {
+    background: #6f1818;
+}
+.book-grid {
+  align-items: stretch;
+}
+
+.book-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-copy,
+.book-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 230px;
+  padding: 26px 26px 30px;
+}
+
+.book-button {
+  margin-top: auto;
+  align-self: flex-start;
 }
