@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Meet Robert Keon, the eighteenth-century Irish attorney whose life inspired The Truth of Sheemore by M. C. Widdowson."
+  >
+
+  <title>Meet Robert Keon | M. C. Widdowson</title>
+
+  <style>
+    :root {
+      --cream: #f4efe4;
+      --cream-deep: #e8dfcf;
+      --ink: #28251f;
+      --green: #183f35;
+      --green-soft: #49665d;
+      --gold: #a48856;
+      --white: #fffdf8;
+      --shadow: 0 20px 45px rgba(41, 35, 25, 0.16);
+      --serif: Georgia, "Times New Roman", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--serif);
+      line-height: 1.65;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      min-height: 82px;
+      padding: 0 6vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      border-bottom: 1px solid rgba(24, 63, 53, 0.16);
+      background: rgba(244, 239, 228, 0.96);
+    }
+
+    .brand {
+      color: var(--green);
+      text-decoration: none;
+      font-size: 1rem;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    .site-nav {
+      display: flex;
+      gap: 2rem;
+      font-size: 0.82rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+    }
+
+    .site-nav a:hover,
+    .site-nav a:focus {
+      color: var(--gold);
+    }
+
+    .page-heading {
+      padding: 5rem 6vw 4rem;
+      text-align: center;
+      background: var(--cream-deep);
+    }
+
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: var(--gold);
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--green);
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 1.5rem auto 0;
+      color: var(--green-soft);
+      font-size: 1.25rem;
+      font-style: italic;
+    }
+
+    .profiles {
+      padding: 5rem 6vw;
+    }
+
+    .profile {
+      width: min(1120px, 100%);
+      margin: 0 auto 6rem;
+      display: grid;
+      grid-template-columns: minmax(280px, 0.9fr) minmax(360px, 1.1fr);
+      gap: clamp(3rem, 7vw, 6rem);
+      align-items: center;
+    }
+
+    .profile.reverse .portrait {
+      order: 2;
+    }
+
+    .profile.reverse .biography {
+      order: 1;
+    }
+
+    .portrait img {
+      width: 100%;
+      max-height: 720px;
+      object-fit: cover;
+      object-position: top center;
+      background: var(--cream-deep);
+      border: 1px solid rgba(24, 63, 53, 0.18);
+      box-shadow: var(--shadow);
+    }
+
+    .caption {
+      margin: 1rem 0 0;
+      color: var(--green-soft);
+      font-size: 0.95rem;
+      font-style: italic;
+      text-align: center;
+    }
+
+    .profile-label {
+      margin: 0 0 0.8rem;
+      color: var(--gold);
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 1.5rem;
+      color: var(--green);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .biography p {
+      margin: 0 0 1.25rem;
+      font-size: 1.12rem;
+    }
+
+    blockquote {
+      margin: 2rem 0 0;
+      padding: 1.5rem 1.75rem;
+      border-top: 1px solid var(--gold);
+      border-bottom: 1px solid var(--gold);
+      color: var(--green);
+      font-size: 1.25rem;
+      font-style: italic;
+    }
+
+    .return-link {
+      padding: 0 6vw 5rem;
+      text-align: center;
+    }
+
+    .return-link a {
+      display: inline-block;
+      padding: 0.9rem 1.4rem;
+      border: 1px solid var(--green);
+      color: var(--green);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .return-link a:hover,
+    .return-link a:focus {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    @media (max-width: 800px) {
+      .site-header {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .site-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .profile {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .profile.reverse .portrait,
+      .profile.reverse .biography {
+        order: initial;
+      }
+
+      .portrait {
+        max-width: 520px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">M. C. Widdowson</a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="sheemore.html">The Truth of Sheemore</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-heading">
+      <p class="eyebrow">Before Sheemore</p>
+
+      <h1>Meet Robert Keon</h1>
+
+      <p class="intro">
+        Before the trial reduced him to a name in the record,
+        Robert Keon was an attorney, husband and father.
+      </p>
+    </section>
+
+    <section class="profiles">
+
+      <article class="profile">
+
+        <div class="portrait">
+          <img
+            src="images/robert-keon.png"
+            alt="An imagined portrait of Robert Keon standing in his office"
+          >
+
+          <p class="caption">
+            An imagined portrait based on a family photograph.
+          </p>
+        </div>
+
+        <div class="biography">
+          <p class="profile-label">Before Sheemore</p>
+
+          <h2>Robert Keon</h2>
+
+          <p>
+            Robert Keon was one of five brothers and was admitted
+            as an attorney of His Majesty's Court of Exchequer in 1759.
+          </p>
+
+          <p>
+            He lived at Moreagh House on the Newbrook estate in
+            County Leitrim and practised as an attorney in
+            Carrick-on-Shannon.
+          </p>
+
+          <p>
+            He was married to Bridget Kelly, and they had a son,
+            William.
+          </p>
+
+          <p>
+            A man of education and standing, Robert became a tragic
+            figure after the events on Sheemore Hill on
+            16 October 1786, when George Nugent Reynolds was fatally shot.
+          </p>
+
+          <p>
+            Robert was convicted of murder in Dublin in 1787 and
+            executed at Newgate Prison, Dublin, on 20 February 1788.
+          </p>
+
+          <blockquote>
+            Before Sheemore, before the trial, before history remembered
+            him for a single act.
+          </blockquote>
+        </div>
+
+      </article>
+
+      <article class="profile reverse">
+
+        <div class="portrait">
+          <img
+            src="images/bridget-william.jpg"
+            alt="An imagined portrait of Bridget Keon seated with her young son William"
+          >
+
+          <p class="caption">
+            An imagined portrait based on a family photograph.
+          </p>
+        </div>
+
+        <div class="biography">
+          <p class="profile-label">Wife and mother</p>
+
+          <h2>Bridget Keon</h2>
+
+          <p>
+            Very little is known about Bridget Keon. Like many women
+            of her time, she appears only briefly in the historical
+            record.
+          </p>
+
+          <p>
+            In <em>The Truth of Sheemore</em>, I imagined the wife who
+            stood beside Robert Keon as his world unravelled, drawing
+            on the customs, expectations and surviving evidence of
+            late eighteenth-century Ireland.
+          </p>
+
+          <p>
+            Their son William was still a child when his father was
+            executed. He later died in Jamaica in 1804.
+          </p>
+
+          <blockquote>
+            Behind every verdict are lives history almost forgot.
+            Bridget’s story is reconstructed from the fragments
+            that remain.
+          </blockquote>
+        </div>
+
+      </article>
+
+    </section>
+
+    <div class="return-link">
+      <a href="sheemore.html">Return to The Truth of Sheemore</a>
+    </div>
+
+  </main>
+
+</body>
+</html>

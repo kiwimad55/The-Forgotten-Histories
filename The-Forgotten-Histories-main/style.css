@@ -1,0 +1,593 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #24231f;
+  background: #f3efe7;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #fffdf7;
+  background:
+    linear-gradient(rgba(22, 25, 20, .29), rgba(22, 25, 20, .36)),
+    url("sheemore-hero.png") center 44% / cover no-repeat;
+}
+
+nav {
+  padding: 32px 5vw 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 34px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #fffdf7;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.hero-content {
+  width: min(700px, 82vw);
+  margin: auto 0 auto 5.6vw;
+  padding: 20px 0 120px;
+  transform: translateY(55px);
+}
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  line-height: 1.05;
+}
+
+h1 {
+  margin: 0 0 22px;
+  max-width: 650px;
+  font-size: clamp(2.7rem, 5vw, 4.6rem);
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .45);
+}
+
+.hero-content > p {
+  max-width: 620px;
+  margin: 0 0 26px;
+  font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .55);
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 19px;
+  color: #fff;
+  background: #315b37;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: .96rem;
+  font-weight: 600;
+}
+
+.button:hover,
+.button:focus {
+  background: #24482a;
+}
+
+.authorline {
+  margin-top: 18px;
+  font-size: 1rem;
+}
+
+.welcome {
+  width: min(1120px, 90vw);
+  margin: 0 auto;
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #315b37;
+  font-size: .86rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 26px;
+  font-size: clamp(2.7rem, 5vw, 4.4rem);
+  color: #243d29;
+}
+
+.welcome-text p:not(.eyebrow),
+.teaser p:not(.eyebrow) {
+  font-size: 1.18rem;
+}
+
+.author-photo img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 18px 45px rgba(34, 32, 27, .22);
+}
+
+.books {
+  padding: 100px 5vw 115px;
+  text-align: center;
+  background: #e5ded1;
+}
+
+.books > h2 {
+  margin-bottom: 55px;
+}
+
+.book-grid {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.book-card {
+  overflow: hidden;
+  background: #fffdf8;
+  box-shadow: 0 12px 32px rgba(32, 29, 23, .14);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+ }
+
+.book-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: contain;
+  background: #f6f1e7;
+}
+
+.book-copy {
+  padding: 26px 26px 30px;
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+
+.book-number {
+  margin: 0 0 8px;
+  color: #6b5b42;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.book-card h3 {
+  margin: 0 0 14px;
+  color: #243d29;
+  font-size: 2rem;
+}
+
+.book-card p:last-child {
+  margin-bottom: 0;
+}
+
+.teaser {
+  padding: 95px max(7vw, 24px);
+  text-align: center;
+  background: #f7f3ec;
+}
+
+.teaser p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teaser.alternate {
+  background: #ded6c7;
+}
+
+footer {
+  padding: 32px 20px;
+  color: #ece8de;
+  background: #243d29;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  nav ul {
+    justify-content: center;
+    gap: 14px 20px;
+  }
+
+  .hero-content {
+    margin-left: 7vw;
+    transform: translateY(-20px);
+  }
+
+  .welcome,
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome {
+    gap: 38px;
+  }
+
+  .author-photo {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .book-card {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 560px) {
+  nav {
+    padding: 18px 18px 0;
+  }
+
+  nav ul {
+    font-size: .9rem;
+  }
+
+  .hero-content {
+    width: 86vw;
+    margin-left: 7vw;
+    padding-bottom: 80px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .welcome,
+  .books,
+  .teaser {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+
+/* Wording and author-section refinement */
+.hero-tagline {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: .015em;
+}
+
+.authorline {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: .035em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .55);
+}
+
+.welcome {
+  min-height: 100vh;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.welcome-text {
+  max-width: 690px;
+}
+
+.welcome .about-lead {
+  margin-top: 0;
+  margin-bottom: 28px;
+  color: #324333;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  line-height: 1.35;
+}
+
+.welcome-text h2 {
+  margin-bottom: 22px;
+}
+
+@media (max-width: 900px) {
+  .welcome {
+    min-height: auto;
+  }
+}
+
+
+/* Final author-section spacing and scale */
+.welcome-text h2 {
+  font-size: clamp(3rem, 5.2vw, 5.2rem);
+  line-height: 1.02;
+  margin-bottom: 34px;
+}
+
+.welcome .about-lead {
+  margin-bottom: 40px;
+}
+
+.welcome-text > p:not(.eyebrow):not(.about-lead) {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.welcome-text > p:last-child {
+  margin-bottom: 0;
+}
+
+.author-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .welcome-text h2 {
+    font-size: clamp(2.7rem, 10vw, 4.2rem);
+  }
+}
+
+
+/* Final typography refinement */
+
+.welcome-text h2{
+    font-size:clamp(2.7rem,4.5vw,4.4rem);
+}
+
+.about-lead{
+    margin-bottom:0.35rem;
+    font-size:1.55rem;
+    color:#2f4732;
+}
+
+.about-mission{
+    margin-top:0;
+    margin-bottom:2.5rem;
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-size:clamp(1.45rem,2vw,1.9rem);
+    line-height:1.45;
+    color:#3a4b39;
+}
+
+
+/* About-section layout: narrower opening text, larger portrait,
+   and the closing paragraph across the full page width. */
+.welcome {
+  width: min(1380px, 89vw);
+  grid-template-columns: minmax(350px, 0.78fr) minmax(560px, 1.42fr);
+  grid-template-areas:
+    "copy portrait"
+    "closing closing";
+  align-items: start;
+  column-gap: clamp(52px, 6vw, 96px);
+  row-gap: 54px;
+}
+
+.welcome-text {
+  grid-area: copy;
+  max-width: 500px;
+}
+
+.author-photo {
+  grid-area: portrait;
+  align-self: center;
+}
+
+.author-photo img {
+  width: 100%;
+  max-height: 610px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-history {
+  max-width: 490px;
+}
+
+.about-closing {
+  grid-area: closing;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  color: #252922;
+  font-size: clamp(1.2rem, 1.45vw, 1.48rem);
+  line-height: 1.55;
+}
+
+@media (max-width: 1040px) {
+  .welcome {
+    width: min(920px, 88vw);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "portrait"
+      "closing";
+    row-gap: 42px;
+  }
+
+  .welcome-text,
+  .about-history {
+    max-width: 720px;
+  }
+
+  .author-photo {
+    width: 100%;
+    max-width: 760px;
+  }
+
+  .author-photo img {
+    max-height: none;
+  }
+}
+
+
+/* Fit the whole About section onto a typical desktop screen */
+.welcome{
+    padding-top:70px;
+    padding-bottom:55px;
+    row-gap:34px;
+    column-gap:54px;
+}
+
+.welcome-text h2{
+    font-size:clamp(2.5rem,4vw,3.9rem);
+    margin-bottom:20px;
+    line-height:1.03;
+}
+
+.about-lead{
+    margin-bottom:0.2rem;
+    font-size:1.35rem;
+}
+
+.about-mission{
+    margin-bottom:1.7rem;
+    max-width:420px;
+    line-height:1.5;
+}
+
+.about-history{
+    margin-bottom:0;
+    max-width:430px;
+    line-height:1.45;
+}
+
+.author-photo{
+    align-self:start;
+}
+
+.author-photo img{
+    max-height:520px;
+}
+
+.about-closing{
+    margin-top:-8px;
+    font-size:1.15rem;
+    line-height:1.45;
+}
+
+@media (max-width:1040px){
+    .welcome{
+        padding-top:70px;
+        padding-bottom:70px;
+    }
+    .author-photo img{
+        max-height:none;
+    }
+}
+
+
+/* FINAL BALANCE
+   Reduce portrait by ~20% so the page breathes and the
+   closing paragraph fits comfortably on a desktop screen.
+*/
+
+.author-photo{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.author-photo img{
+    width:80%;
+    max-width:640px;
+    max-height:430px;
+    height:auto;
+    object-fit:cover;
+}
+
+.welcome{
+    row-gap:24px;
+}
+
+.about-closing{
+    margin-top:-4px;
+    padding-top:0;
+}
+
+@media (max-width:1040px){
+    .author-photo img{
+        width:100%;
+        max-height:none;
+    }
+}
+.book-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 22px;
+    background: #8b1e1e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.book-button:hover {
+    background: #6f1818;
+}
+.book-grid {
+  align-items: stretch;
+}
+
+.book-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-copy,
+.book-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 230px;
+  padding: 26px 26px 30px;
+}
+
+.book-button {
+  margin-top: auto;
+  align-self: flex-start;
+}
