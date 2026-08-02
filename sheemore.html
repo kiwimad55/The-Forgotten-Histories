@@ -24,7 +24,7 @@
     }
 
     html {
-      scroll-behaviour: smooth;
+      scroll-behavior: smooth;
     }
 
     body {
@@ -148,26 +148,28 @@
     }
 
     .cover-wrap {
-      max-width: 390px;
-      justify-self: center;
-      position: relative;
-    }
+  width: 340px;
+  height: 510px;
+  justify-self: center;
+  position: relative;
+}
 
-    .cover-wrap::before {
-      content: "";
-      position: absolute;
-      inset: 18px -18px -18px 18px;
-      border: 1px solid rgba(164, 136, 86, 0.45);
-      z-index: -1;
-    }
+.cover-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0px -0px -0px 0px;
+  border: 1px solid rgba(164, 136, 86, 0.45);
+  z-index: -1;
+}
 
-    .book-cover {
-      width: 100%;
-      aspect-ratio: 2 / 3;
-      object-fit: cover;
-      background: var(--cream-deep);
-      box-shadow: var(--shadow);
-    }
+.book-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: var(--cream-deep);
+  box-shadow: var(--shadow);
+}
 
     .book-copy {
       max-width: 690px;
@@ -425,6 +427,36 @@
         inset: 11px -11px -11px 11px;
       }
     }
+    .archive-card-marker {
+      min-height: 390px;
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 2.25 rem;
+}
+
+  
+
+.archive-card-marker span {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.archive-card-marker small {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--green-soft);
+}
+
+.card-ornament {
+  margin: 0.8rem 0;
+  color: var(--gold);
+}
   </style>
 </head>
 
@@ -460,13 +492,40 @@
     <div class="archive-grid">
 
       <a href="robert-keon.html" class="archive-card">
-        <img src="robert-keon.jpg" alt="Portrait of Robert Keon">
-        <h3>Meet Robert Keon</h3>
-        <p>
-          The attorney whose life changed forever on
-          16 October 1786.
-        </p>
-      </a>
+<div class="archive-card-marker">
+
+
+
+  <span>Before Sheemore</span>
+
+
+
+  <div class="card-ornament">◆</div>
+
+
+
+  <h3>Meet Robert Keon</h3>
+
+
+
+  <small>Attorney • Husband • Father</small>
+
+
+
+  <p>
+
+
+
+    Discover the man whose life was remembered for one fatal morning on Sheemore Hill.
+
+
+
+  </p>
+
+
+
+</div>
+</a>
 
       <a href="carrick.html" class="archive-card">
         <img src="carrick.jpg" alt="Carrick-on-Shannon">
@@ -512,7 +571,7 @@
           -->
           <img
             class="book-cover"
-            src="truth-of-sheemore-cover.jpg.png"
+            src="truth-of-sheemore-cover.png"
             alt="Cover of The Truth of Sheemore by M. C. Widdowson">
         </figure>
 
@@ -550,13 +609,7 @@
 
     </section>    <!-- end of the hero section -->
 
-<section class="discover">
-    ...
-</section>
-
-
-
-<script>
+<
   </main>
 
   <script>
