@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Inside the Archive | M. C. Widdowson</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .archive-page {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      text-align: center;
+    }
+
+    .archive-page h1 {
+      margin: 0 auto 20px;
+      max-width: none;
+      text-align: center;
+    }
+
+    .archive-intro {
+      max-width: 780px;
+      margin: 0 auto 50px;
+      font-size: 1.18rem;
+      line-height: 1.75;
+    }
+
+    .archive-item {
+      margin: 0 auto 65px;
+    }
+
+    .archive-image {
+      display: block;
+      width: 100%;
+      max-width: 820px;
+      height: auto;
+      margin: 20px auto 12px;
+      cursor: zoom-in;
+    }
+
+    .archive-caption {
+      max-width: 760px;
+      margin: 0 auto 18px;
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    .document-link {
+      display: inline-block;
+      margin-top: 8px;
+    }
+
+    .doc-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.92);
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: auto;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .doc-overlay:target {
+      display: flex;
+    }
+
+    .doc-overlay img {
+      display: block;
+      width: auto;
+      max-width: none;
+      height: auto;
+      margin: 30px auto;
+    }
+
+    .doc-close {
+      position: fixed;
+      top: 15px;
+      right: 25px;
+      color: white;
+      font-size: 3rem;
+      line-height: 1;
+      text-decoration: none;
+      z-index: 10000;
+    }
+
+    .return-link {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="archive-page">
+
+    <p class="eyebrow">THE TRUTH OF SHEEMORE</p>
+
+    <h1>Inside the Archive</h1>
+
+    <p class="archive-intro">
+      The story of Robert Keon survives in fragments: printed trial reports,
+      contemporary newspaper accounts and records from a world in which
+      honour, reputation and the law could collide with fatal consequences.
+    </p>
+
+
+    <div class="archive-item">
+
+      <img
+  src="images/Trial-doc.jpg"
+  alt="Title page of the printed trial report of Robert Keon"
+  class="archive-image">
+
+      <p class="archive-caption">
+        The printed report of the trial of Robert Keon for the killing of
+        George Nugent Reynolds.
+      </p>
+
+      <p class="document-link">
+        <a class="button" href="#trial-report">
+          View document full screen
+        </a>
+      </p>
+
+    </div>
+
+
+    <div class="archive-item">
+
+      <a href="#newspaper-report">
+        <img
+          src="images/newspaper-trial.jpg"
+          alt="Contemporary newspaper report of Robert Keon's trial"
+          class="archive-image">
+      </a>
+
+      <p class="archive-caption">
+        A contemporary newspaper account reporting the proceedings at
+        Robert Keon's trial.
+      </p>
+
+      <p class="document-link">
+        <a class="button" href="#newspaper-report">
+          View document full screen
+        </a>
+      </p>
+
+    </div>
+
+
+    <div class="archive-item">
+
+      <a href="#code-duello">
+        <img
+          src="images/code-duello.jpg"
+          alt="Pages from the Code Duello"
+          class="archive-image">
+      </a>
+
+      <p class="archive-caption">
+        Rules of honour and duelling from the period, revealing the formal
+        conventions that governed insults, challenges and seconds.
+      </p>
+
+      <p class="document-link">
+        <a class="button" href="#code-duello">
+          View document full screen
+        </a>
+      </p>
+
+    </div>
+
+
+    <div class="archive-item">
+
+      <img
+        src="images/period-courtroom.jpg"
+        alt="Early nineteenth-century courtroom interior"
+        class="archive-image">
+
+      <p class="archive-caption">
+        An early nineteenth-century courtroom, illustrating the setting of
+        a trial in this period.
+      </p>
+
+    </div>
+
+
+    <p class="return-link">
+      <a class="button" href="sheemore.html">
+        ← Return to The Truth of Sheemore
+      </a>
+    </p>
+
+  </section>
+
+<div id="trial-report" class="doc-overlay">
+  
+    <a href="#" class="doc-close" aria-label="Close document">&times;</a>
+    <img
+      src="images/Trial-doc.jpg"
+      alt="Title page of the printed trial report of Robert Keon">
+  </div>
+
+
+  <div id="newspaper-report" class="doc-overlay">
+    <a href="#" class="doc-close" aria-label="Close document">&times;</a>
+    <img
+      src="images/newspaper-trial.jpg"
+      alt="Contemporary newspaper report of Robert Keon's trial">
+  </div>
+
+
+  <div id="code-duello" class="doc-overlay">
+    <a href="#" class="doc-close" aria-label="Close document">&times;</a>
+    <img
+      src="images/code-duello.jpg"
+      alt="Pages from the Code Duello">
+  </div>
+
+</body>
+</html>

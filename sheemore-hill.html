@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walk Sheemore Hill | M. C. Widdowson</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+   .sheemore-page h1 {
+    margin: 0 auto 15px;
+    max-width: none;
+    text-align: center;
+}
+
+    .sheemore-page h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+    .sheemore-intro {
+      font-size: 1.18rem;
+      max-width: 760px;
+      margin: 0 auto 50px;
+    }
+
+    .sheemore-image {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      margin: 20px auto 10px;
+    }
+
+    .sheemore-caption {
+      max-width: 800px;
+      margin: 0 auto 55px;
+      font-size: 1.05rem;
+      font-style: italic;
+    }
+
+    .map-link {
+      display: inline-block;
+      margin: 8px auto 55px;
+    }
+
+    .return-link {
+      margin-top: 50px;
+    }
+    .map-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-overlay:target {
+    display: flex;
+}
+
+.map-overlay img {
+    display: block;
+    width: 98vw;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+
+.map-close {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 3rem;
+    line-height: 1;
+    text-decoration: none;
+    z-index: 10000;
+}
+  </style>
+</head>
+
+<body>
+
+  <section class="sheemore-page">
+
+    <p class="eyebrow">THE TRUTH OF SHEEMORE</p>
+
+    <h1>Walk Sheemore Hill</h1>
+
+    <p class="sheemore-intro">
+  Sheemor, the Great Fairy Mound, is a limestone hill near Leitrim Village,
+  a hard remnant too tough for glaciers to erase. Legend says two warring
+  fairy tribes once clashed here, their epic battle remembered in the
+  thunderous noise that echoed between the sidhes.
+</p>
+
+
+    <img
+      src="images/lane-at-sheemore.jpg"
+      alt="A lane and field with Sheemore Hill in the distance"
+      class="sheemore-image">
+
+    <p class="sheemore-caption">
+      Looking towards Sheemore across the fields of County Leitrim.
+    </p>
+
+
+    <img
+      src="images/sheemore-cross.png"
+      alt="The cross on Sheemore Hill"
+      class="sheemore-image">
+
+    <p class="sheemore-caption">
+      Sheemore Cross. The hill has long been associated with local folklore
+      and the traditions of the fairy hill.
+    </p>
+
+
+    <img
+      src="images/sheemore-map-1830.png"
+      alt="Annotated 1830 map showing Newbrook, Letterfyne, Laheen and Sheemore"
+      class="sheemore-image">
+
+    <p class="sheemore-caption">
+      An 1830 map showing Newbrook, Letterfyne, Laheen and Sheemore.
+    </p>
+<p class="map-link">
+  <a class="button" href="#full-map">
+    View the 1830 map full screen
+  </a>
+</p>
+
+<div id="full-map" class="map-overlay">
+  <a href="#" class="map-close" aria-label="Close map">&times;</a>
+
+  <img
+    src="images/sheemore-map-1830.png"
+    alt="Annotated 1830 map showing Newbrook, Letterfyne, Laheen and Sheemore">
+
+
+
+    <p class="return-link">
+      <a class="button" href="sheemore.html">
+        ← Return to The Truth of Sheemore
+      </a>
+    </p>
+
+  </section>
+
+</body>
+</html>
