@@ -396,6 +396,16 @@
   height:230px;
   object-fit:cover;
 }
+.archive-card img[alt="Robert Keon"] {
+  object-fit: contain;
+  object-position: center top;
+  background: white;
+}
+
+.archive-card img[alt="Code Duello"] {
+    object-position: top;
+}
+
 
 .archive-card h3{
   margin:1rem 1rem .5rem;
@@ -408,6 +418,28 @@
   font-size:.95rem;
   color:#555;
 }
+.back-to-books-wrap {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.back-to-books {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  color: var(--green);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  background: white;
+}
+
+.back-to-books:hover {
+  background: var(--green);
+  color: white;
+}
+
     @media (max-width: 480px) {
       .brand {
         font-size: 0.82rem;
@@ -541,44 +573,17 @@
 
     <div class="archive-grid">
 
-      <a href="robert-keon.html" class="archive-card">
-<div class="archive-card-marker">
+     <a href="robert-keon.html" class="archive-card">
+    <img src="images/Robert-Keon-card.png" alt="Robert Keon">
 
+    <h3>Meet Robert Keon</h3>
 
-
-  <span>Before Sheemore</span>
-
-
-
-  <div class="card-ornament">◆</div>
-
-
-
-  <h3>Meet Robert Keon</h3>
-
-
-
-  <small>Attorney • Husband • Father</small>
-
-
-
-  <p>
-
-
-
-    Discover the man whose life was remembered for one fatal morning on Sheemore Hill.
-
-
-
-  </p>
-
-
-
-</div>
+    <p>
+        Discover the man whose life was remembered for one fatal morning on Sheemore Hill.
+    </p>
 </a>
-
       <a href="carrick.html" class="archive-card">
-        <img src="carrick.jpg" alt="Carrick-on-Shannon">
+        <img src="images/carrick-bridge.jpg" alt="Carrick-on-Shannon bridge" class="archive-card-image">
         <h3>Visit Carrick-on-Shannon</h3>
         <p>
           Explore the town, river and landscape that inspired the novel.
@@ -586,7 +591,7 @@
       </a>
 
       <a href="archive.html" class="archive-card">
-        <img src="trial-document.jpg" alt="Trial documents">
+        <img src="images/code-Duello.jpg" alt="Code Duello">
         <h3>Inside the Archive</h3>
         <p>
           Original trial records, newspaper reports, maps and family papers.
@@ -594,7 +599,7 @@
       </a>
 
       <a href="sheemore-hill.html" class="archive-card">
-        <img src="sheemore-hill.jpg" alt="Sheemore Hill">
+        <img src="images/sheemore-hill-card.jpeg" alt="Sheemore Hill">
         <h3>Walk Sheemore Hill</h3>
         <p>
           Stand where the events of that October morning unfolded.
@@ -602,7 +607,9 @@
       </a>
 
     </div>
-
+<div class="back-to-books-wrap">
+  <a href="index.html#books" class="back-to-books">← Back to Books</a>
+</div>
   </div>
 
 </section>
