@@ -901,3 +901,37 @@ body > nav a {
     padding: 0;
   }
 }
+.continue-link {
+  text-align: right;
+  margin-top: 1.5rem;
+  padding: 0 1rem 1rem;
+}
+
+.continue-link a {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #315c4a;
+  text-decoration: none;
+}
+
+.continue-link a:hover {
+  text-decoration: underline;
+}
+
+.continue-link span {
+  margin-left: 0.35rem;
+}
+.buy-direct-button {
+  display: inline-block;
+  background-color: #315c4a;
+  color: #ffffff;
+  padding: 0.85rem 1.4rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.buy-direct-button:hover {
+  background-color: #244638;
+  color: #ffffff;
+}

@@ -106,12 +106,12 @@
     }
 
     .book-intro {
-      min-height: calc(100vh - 82px);
+      min-height: auto;
       display: grid;
       align-items: center;
-      padding: clamp(3.5rem, 8vw, 7rem) 6vw;
+      padding: 3rem 6vw 2rem;
       position: relative;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .book-intro::before {
@@ -507,6 +507,51 @@
   margin: 0.8rem 0;
   color: var(--gold);
 }
+.review-section {
+ padding: 1.5rem 2rem 2rem;
+  text-align: center;
+  background: var(--cream);
+}
+
+.review-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.review-section .eyebrow {
+margin: 0 0 0.6rem;
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+}
+
+.review-section h2 {
+  margin: 0 0 1rem;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.review-section p {
+  margin: 0 auto 1.6rem;
+  line-height: 1.7;
+}
+
+.review-section .back-to-books {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--green);
+  background: var(--white);
+}
+
+.review-section .back-to-books:hover {
+  background: var(--green);
+  color: var(--white);
+}
   </style>
 </head>
 
@@ -543,6 +588,20 @@
             class="book-cover"
             src="theft-cover.jpg"
             alt="The Theft of Truth by M. C. Widdowson">
+            
+<section class="review-section" aria-labelledby="review-title">
+  <div class="review-inner">
+  <p class="eyebrow">ALREADY READ THE BOOK?</p>
+  
+
+  <a href="https://www.goodreads.com/book/show/260045827-the-theft-of-truth"
+     class="back-to-books"
+     target="_blank"
+     rel="noopener">
+    Review on Goodreads
+  </a>
+</div>
+</section>
         </figure>
 
         <div class="book-copy">
@@ -572,6 +631,11 @@
 
       </div>
     </section>
+
+    </section>
+
+
+
 
 <section class="discover" aria-labelledby="discover-title">
 
@@ -627,7 +691,7 @@
     
     </section>    <!-- end of the hero section -->
 
-<
+
   </main>
 
   <script>
