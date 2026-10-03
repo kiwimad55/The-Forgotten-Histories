@@ -935,3 +935,24 @@ body > nav a {
   background-color: #244638;
   color: #ffffff;
 }
+.hero-book-links {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.hero-book-links div {
+  color: #f5efe3;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero-book-links a {
+  display: block;
+  color: #f5efe3;
+  text-decoration: none;
+}
+
+.hero-book-links a:hover {
+  text-decoration: underline;
+}
