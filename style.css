@@ -890,7 +890,7 @@ body > nav a {
   height: 100%;
 }
 @media (max-width: 900px) {
-  .book-grid {
+  .book-grid, .series-grid {
     grid-template-columns: 1fr;
   }
 
