@@ -1028,3 +1028,11 @@ body > nav a {
     font-size: 2.6rem;
   }
 }
+/* Second buy button in the opening section: same colour, slightly quieter */
+.button-buy-second {
+  background: rgba(139, 30, 30, .82);
+  font-size: .96rem;
+}
+.hero-buttons + .hero-buttons {
+  margin-top: -12px;
+}
