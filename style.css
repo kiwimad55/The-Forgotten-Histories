@@ -1036,3 +1036,4 @@ body > nav a {
 .hero-buttons + .hero-buttons {
   margin-top: -12px;
 }
+.buy-row .explore-link { font-size: .95rem; }
