@@ -13,16 +13,18 @@
 <body>
   <nav aria-label="Main navigation">
     <ul>
-     <li><a href="index.html">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="#books">Books</a></li>
-     <li><a href="#discovery">Discovery Trail</a></li>
+      <li><a href="#discovery">Discovery Trail</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
 <main>
 
- <section class="book-intro" aria-labelledby="book-title">  
+ <section class="book-intro">
   
 <header class="hero" id="forgotten-histories">
   
@@ -30,13 +32,17 @@
   <div class="hero-content">
     <h1>The Forgotten Histories</h1>
     <p class="hero-tagline">Forgotten Histories, Reconstructed.</p>
-    <a class="button" href="#books">Discover the Series</a>
+    <p class="hero-new">Out now: Book Two, <em>The Theft of Truth</em></p>
+    <div class="hero-buttons">
+      <a class="button button-buy" href="https://www.amazon.co.uk/dp/B0HP265FR1" target="_blank" rel="noopener">Buy The Theft of Truth</a>
+      <a class="button button-quiet" href="#books">Discover the Series</a>
+    </div>
     <div class="authorline">M. C. Widdowson</div>
     <div class="hero-book-links">
   <div>The Forgotten Histories</div>
   <a href="sheemore.html">Book One · The Truth of Sheemore</a>
   <a href="theft-of-truth.html">Book Two · The Theft of Truth</a>
-  <a href="#books">Book Three · Where Truth Lies</a>
+  <span>Book Three · Where Truth Lies (in preparation)</span>
 </div>
   </div>
 </header>
@@ -50,7 +56,7 @@
   <a class="book-image-link" href="sheemore.html">
     <img
       class="book-card-image"
-      src="truth-cover.png"
+      src="truth-of-sheemore-cover.png"
       alt="The Truth of Sheemore by M. C. Widdowson">
   </a>
 
@@ -64,22 +70,27 @@
       family story that refuses to stay buried.
     </p>
 
-    <a class="book-button" href="sheemore.html">
-      Explore Book
-      <span aria-hidden="true">→</span>
-    </a>
+    <p class="book-formats">Paperback and Kindle</p>
+    <div class="buy-row">
+      <a class="book-button" href="https://www.amazon.co.uk/dp/B0HDQBMN4W" target="_blank" rel="noopener">Buy on Amazon</a>
+      <a class="explore-link" href="sheemore.html">Explore the book <span aria-hidden="true">→</span></a>
+    </div>
   </div>
 </article>
 
       <article class="book-card">
-   <img src="theft-cover.jpg" alt="Cover of The Theft of Truth by M. C. Widdowson">
+    <a class="book-image-link" href="theft-of-truth.html">
+      <img src="theft-cover.jpg" alt="Cover of The Theft of Truth by M. C. Widdowson">
+    </a>
     <div class="book-copy">
-          <p class="book-number">Book Two • Publishing November 2026</p>
+          <p class="book-number">Book Two • New • Out now</p>
           <h3>The Theft of Truth</h3>
           <p>Letters, inheritance and a family record that may have been deliberately engineered.</p>
- <a class="book-button" href="theft-of-truth.html">
-  Explore
-</a>
+          <p class="book-formats">Paperback and Kindle</p>
+          <div class="buy-row">
+            <a class="book-button" href="https://www.amazon.co.uk/dp/B0HP265FR1" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a class="explore-link" href="theft-of-truth.html">Explore the book <span aria-hidden="true">→</span></a>
+          </div>
          </div>
       </article>
 
@@ -140,7 +151,7 @@
     </div>
 
     <p class="about-closing"><em>The Forgotten Histories</em> series grew from those discoveries. Each novel begins with real people, real places and surviving historical records. Where the record falls silent, the story is carefully reconstructed from the evidence that remains.</p>
-    <p class="button-row">
+    <p class="button-row" id="contact">
   <a class="button" href="mailto:widdowson.mad@icloud.com">Contact Me</a>
 </p>
 <p class="social-links">
@@ -153,7 +164,7 @@
 </p>
 
   </section>
-<section class="newsletter-signup">
+<section class="newsletter-signup" id="newsletter">
 
   <script async data-uid="835c51f459"
 
@@ -161,8 +172,9 @@
 
 </section>
 
+</section>
 </main>
-<footer id="contact">
+<footer>
   <p>© M. C. Widdowson • The Forgotten Histories</p>
 </footer>
 

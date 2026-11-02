@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Truth of Sheemore by M. C. Widdowson, a historical novel inspired by the 1786 death of George Nugent Reynolds and the trial of Robert Keon.">
  <title>The Truth of Sheemore | Historical Novel Set in County Leitrim</title>
 <meta name="description" content="The Truth of Sheemore is a historical novel inspired by the 1786 killing of George Nugent Reynolds on Sheemore Hill in County Leitrim and the trial of Robert Keon.">
   <style>
@@ -507,6 +506,51 @@
   margin: 0.8rem 0;
   color: var(--gold);
 }
+
+    /* ===== Buying buttons (website repairs, Nov 2026) ===== */
+    .buy-panel {
+      margin: 1.6rem auto 0;
+      max-width: 340px;
+      text-align: center;
+    }
+    .buy-panel p { margin: 0 0 0.35rem; }
+    .buy-new {
+      color: #8b1e1e;
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .buy-title { font-size: 1.15rem; color: var(--green); }
+    .buy-date { font-size: 0.92rem; color: var(--green-soft); margin-bottom: 0.9rem !important; }
+    .buy-btn {
+      display: block;
+      margin: 0.6rem auto 0;
+      padding: 0.85rem 1.1rem;
+      border-radius: 4px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+    .buy-btn-main { background: #8b1e1e; color: #fff; border: 1px solid #8b1e1e; }
+    .buy-btn-main:hover, .buy-btn-main:focus { background: #6f1818; }
+    .buy-btn-alt { background: var(--white); color: var(--green); border: 1px solid var(--gold); }
+    .buy-btn-alt:hover, .buy-btn-alt:focus { background: var(--cream-deep); }
+    .next-book {
+      max-width: 620px;
+      margin: 3rem auto 1rem;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      background: var(--white);
+      border-top: 3px solid var(--gold);
+      box-shadow: var(--shadow);
+    }
+    .next-book h3 { margin: 0.3rem 0 0.8rem; color: var(--green); font-weight: normal; font-size: 1.6rem; line-height: 1.25; }
+    .next-book .buy-btn { display: inline-block; margin: 0.4rem 0.3rem 0; }
+    .newsletter-signup { max-width: 700px; margin: 2rem auto 3rem; padding: 0 1.5rem; }
+    html, body { overflow-x: clip; }
+    .book-intro { overflow-x: clip; }
   </style>
 </head>
 
@@ -520,10 +564,10 @@
 
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="index.html#about">About</a>
       <a href="index.html#books" aria-current="page">Books</a>
-      <a href="index.html#series">Series</a>
-      <a href="index.html#news">News</a>
+      <a href="index.html#discovery">Discovery Trail</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#newsletter">Newsletter</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </header>
@@ -545,26 +589,20 @@
             alt="Cover of The Truth of Sheemore by M. C. Widdowson">
         </figure>
          
-<div class="cover-preorder">
+<div class="cover-preorder buy-panel">
 
-  <p><strong>Buy The Truth of Sheemore</strong></p>
-  <p>Publication date: 12 October 2026</p>
+  <p class="buy-title"><strong>Buy The Truth of Sheemore</strong></p>
+  <p class="buy-date">Published 12 October 2026</p>
 
- <p>
-  <a href="https://www.thegreatbritishbookshop.co.uk/products/the-truth-of-sheemore"
+  <a class="buy-btn buy-btn-main"
+     href="https://www.amazon.co.uk/dp/B0HDQBMN4W"
      target="_blank"
-     rel="noopener">
-    Buy direct – Paperback £9.99
-  </a>
-</p>
+     rel="noopener">Buy on Amazon: Paperback &amp; Kindle</a>
 
-<p>
-  <a href="https://www.amazon.co.uk/dp/B0HDQBMN4W"
+  <a class="buy-btn buy-btn-alt"
+     href="https://www.thegreatbritishbookshop.co.uk/products/the-truth-of-sheemore"
      target="_blank"
-     rel="noopener">
-    Buy on Amazon – Paperback &amp; Kindle
-  </a>
-</p>
+     rel="noopener">Buy direct: Paperback £9.99</a>
 
 </div>
 </div>
@@ -652,19 +690,24 @@
   Discover <em>The Truth of Sheemore</em> →
 </a>
 </div> 
+<div class="next-book">
+  <p class="eyebrow">The Forgotten Histories · Book Two</p>
+  <h3>Continue the story in <em>The Theft of Truth</em></h3>
+  <p>One generation after the events on Sheemore Hill, the Keon family story takes another extraordinary turn.</p>
+  <a class="buy-btn buy-btn-main" href="https://www.amazon.co.uk/dp/B0HP265FR1" target="_blank" rel="noopener">Buy The Theft of Truth on Amazon</a>
+  <a class="buy-btn buy-btn-alt" href="theft-of-truth.html">Explore Book Two</a>
+</div>
 <div class="back-to-books-wrap">
   <a href="index.html#books" class="back-to-books">← Back to Books</a>
 </div>
   </div>
 
 </section>
-  <main>
-    
-    </section>    <!-- end of the hero section -->
 
-<
-  </main>
-
+<section class="newsletter-signup" id="newsletter" aria-label="Newsletter sign-up">
+  <script async data-uid="835c51f459"
+          src="https://m-c-widdowson.kit.com/835c51f459/index.js"></script>
+</section>
   <script>
     const menuButton = document.querySelector(".menu-button");
     const navigation = document.querySelector(".site-nav");
@@ -674,13 +717,9 @@
       menuButton.setAttribute("aria-expanded", String(isOpen));
     });
   </script>
-  </script>
 
   <script data-goatcounter="https://mcwiddowson.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
-
-</body>
-</html>
 
 </body>
 </html>
