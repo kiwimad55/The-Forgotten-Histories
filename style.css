@@ -963,6 +963,19 @@ body > nav a {
   font-weight: 600;
   letter-spacing: .02em;
 }
+.hero-direct {
+  margin: 4px 0 14px;
+  font-size: .98rem;
+  line-height: 1.6;
+}
+.hero-direct a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+.hero-direct a:hover, .hero-direct a:focus { color: #f3e3b5; }
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
